@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>斗地主</title>
+    <link rel="stylesheet" href="css/game.css" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/frontPoker.js"></script>
+    <script src="js/Main.js"></script>
+    <script  src="js/game.js"></script>
+
+</head>
+<body>
+<video class="bg_video" autoplay src="mp4/bg2.mp4" loop></video>
+<div class="bg_music"></div>
+<div class="warp">
+    <!--左-->
+   <div class="left">
+       <!--玩家1-->
+       <ul class="play play_1"></ul>
+       <!--按钮-->
+       <p class="play_btn1">
+           <button class="get"></button>
+
+           <button class="noget"></button>
+       </p>
+       <p class="play_btn2 left1">
+           <button class="push"></button>
+           <br>
+           <button class="pass"></button>
+           <br>
+           <button class="prompt"></button>
+           <br>
+           <span class="countDown" ><span></span></span>
+       </p>
+
+       <div class="people1 people">
+           <div class="name"></div>
+           <div class="box">
+               <p class="play_id">我系陈小春</p>
+               <p class="info">底分：<span class="info1">10000</span></p>
+           </div>
+       </div>
+   </div>
+    <!--中-->
+    <div class="mid">
+        <div class="mid_top">
+            <!--初始扑克-->
+            <ul class="all_poker"><!-- <li class="back"></li> --></ul>
+            <!--台上扑克-->
+            <ul class="table_poker"></ul>
+        </div>
+
+        <div class="bottom">
+            <!--玩家2-->
+            <ul class="play play_2"></ul>
+            <!--按钮-->
+            <p class="play_btn1 b" >
+                <button class="get"></button>
+                <button class="noget"></button>
+            </p>
+            <p class="play_btn2">
+                <button class="push"></button>
+                <button class="pass"></button>
+                <button class="prompt"></button>
+                <span class="countDown" style="position: absolute;left: 0;right: 0;margin: 0 auto"><span></span></span>
+            </p>
+
+            <div class="people2 people">
+                <div class="name"></div>
+                <div class="box">
+                    <p class="play_id">我系陈小春</p>
+                    <p class="info">底分：<span class="info1">10000</span></p>
+                </div>
+            </div>
+        </div>
+        <button class="play_game"></button>
+    </div>
+    <!--右-->
+    <div class="right">
+        <!--玩家3-->
+        <ul class="play play_3"></ul>
+        <!--按钮-->
+        <p class="play_btn1">
+            <button class="get"></button>
+            <button class="noget"></button>
+        </p>
+        <p class="play_btn2 right1">
+            <button class="push"></button>
+            <br>
+            <button class="pass"></button>
+            <br>
+            <button class="prompt"></button>
+            <br>
+            <span class="countDown" style="position: absolute;right: 0;"><span></span></span>
+        </p>
+    </div>
+
+    <div class="people3 people">
+        <div class="name"></div>
+        <div class="box">
+            <p class="play_id">我系陈小春</p>
+            <p class="info">底分：<span class="info1">10000</span></p>
+        </div>
+    </div>
+</div>
+<div id="landlord">
+    <div class="title">
+        提示！
+    </div>
+    <div class="text1">
+        <p>本局无人抢地主，为流局！请从新开局</p>
+        <button></button>
+    </div>
+</div>
+<div class="cartoon_pic">
+    <p class="no">要不起</p>
+    <p class="on">你没有选中要出的牌</p>
+    <p class="inconformity">你这牌打不了啊！再点也出不去</p>
+</div>
+
+<div id="bunko">
+    <div class="title">
+        游戏结束
+    </div>
+    <div class="text2">
+        <p>本局游戏结束：<span></span></p>
+        <!--重开-->
+        <button class="reopen"></button>
+        <button class="quit"></button>
+    </div>
+</div>
+<div class="play_beginbg">
+    <button class="btn_play">开始游戏</button>
+    <div class="play_bg1"></div>
+    <div class="play_bg2"></div>
+</div>
+<!--音效-->
+<div class="bgm">
+</div>
+
+<div class="animeite">
+    <img class="bomb" src="images/bomb.gif" />
+    <img class="rocket" src="images/rocket.gif" />
+    <img class="plane" src="images/plane.png" />
+    <img class="even" src="images/liandui.png" />
+    <img class="straight" src="images/shunzi.png" />
+</div>
+</body>
+</html>

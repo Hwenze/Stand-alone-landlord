@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    list-style: none;
+    text-decoration: none;
+}
+/*音效*/
+.bgm{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.bg_music{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.bg_video{
+    position: fixed;
+
+}
+.all_poker{
+    width: 128px;
+    height: 176px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 300px auto 0;
+}
+.all_poker li{
+    position: absolute;
+}
+.table_poker{
+    width: 128px;
+    height: 176px;
+    position: absolute;
+    margin: 0 auto 0;
+}
+.table_poker li{
+    /*width: 128px;*/
+    /*height: 176px;*/
+    position: absolute;
+}
+.back{
+    width: 128px;
+    height: 176px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 100;
+    background: url("../images/17.png")no-repeat -87px -224px;
+}
+.warp{
+    width: 1500px;
+    height: 900px;
+    position: relative;
+    background: rgba(0,0,0,0.1);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.left,.right{
+    width: 300px;
+    height: 900px;
+    float: left;
+    position: relative;
+    background: rgba(0,0,0,0.2);
+}
+.mid{
+    width: 900px;
+    height: 900px;
+    float: left;
+    position: relative;
+    background: rgba(0,0,0,0.3);
+}
+.bottom{
+    position: relative;
+    bottom: 0;
+    width: 900px;
+    height: 300px;
+    margin-top: 100px;
+}
+.play{
+    position: relative;
+    width: 128px;
+    height: 176px;
+    margin: 0 auto 0;
+}
+.play li{
+    position: absolute;
+
+
+}
+.play_1{
+    margin:50px 0 auto auto;
+
+}
+.play_2{
+    margin: 0 auto 0;
+}
+.play_3{
+    margin:50px auto auto 0;
+
+}
+.play .select{
+    top:-20px;
+}
+.play .leftse{
+    left:-20px;
+}
+.play .rightse{
+    right:-20px;
+}
+.play_game{
+    width: 146px;
+    height: 52px;
+    background: url("../images/btn1.jpg")no-repeat -313px -110px;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    border: none;
+    top:300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0;
+}
+
+.play_btn1 button{
+    width: 100px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+.play_btn1{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    outline: none;
+    text-align: center;
+    display: none;
+}
+.b{
+    bottom: 0;
+    margin: auto auto 5px auto;
+}
+
+.play_btn1 .get{
+    background: url("../images/getAnnoget.png")no-repeat -1px -1px;
+}
+.play_btn1 .noget{
+    background: url("../images/getAnnoget.png")no-repeat -1px -42px;
+}
+.play_btn2{
+    /*position: absolute;*/
+    text-align: center;
+    display: none;
+}
+.play_btn2 button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.push{
+    background: url("../images/push.png")no-repeat center;
+}
+.pass{
+    background: url("../images/pass.png")no-repeat center;
+}
+.prompt{
+    background: url("../images/prompt.png")no-repeat center;
+}
+.left1{
+    text-align: left;
+}
+.right1{
+    text-align: right;
+}
+#landlord{
+    width: 400px;
+    height: 400px;
+    border: #58c3ff 5px solid;
+    border-radius: 30px 30px 0 0;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin: 0 auto 0;
+    position: fixed;
+    overflow: hidden;
+    background: white;
+    z-index: 999;
+    display: none;
+}
+.title{
+    background: #58c3ff;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 2em;
+    font-size: 25px;
+}
+.text1{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+.text1 p{
+    margin-top:100px ;
+}
+.text1 button{
+    width: 165px;
+    height: 70px;
+    background: url("../images/anniu.png")no-repeat center;
+    margin-top:100px ;
+}
+.cartoon_pic{
+    position: absolute;
+    /*width: 200px;*/
+    height: 50px;
+    /*background: #a79eff;*/
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 50px;
+    display: none;
+    z-index: 9999;
+}
+.cartoon_pic p{
+    text-shadow: 0 0 2px #fefcc9, 3px -4px 5px #feec85;
+    color:#9d6c00;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-family: "League-Gothic", Courier;
+    text-transform: uppercase;
+}
+.people{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+.people1{
+    top: 50px;
+}
+.people2{
+    bottom: 0;
+    left: 0;
+}
+.people3{
+    top: 50px;
+    right: 0;
+}
+.name{
+    width: 100px;
+    height: 100px;
+    background: url("../images/people1.png") no-repeat center;
+    border-radius: 50%;
+}
+/*输赢*/
+#bunko{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid #66afe9;
+    background: white;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+}
+.text2{
+
+    position: relative;
+}
+.text2 p{
+    margin-top: 50px;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#bunko .reopen{
+    background: url("../images/again.png") no-repeat ;
+    height: 70px;
+    left: 50px;
+    width: 165px;
+    position: absolute;
+    top: 100px;
+}
+#bunko .quit{
+    background: url("../images/dropout.png") no-repeat ;
+    height: 70px;
+    right: 50px;
+    width: 165px;
+    position: absolute;
+    top: 100px;
+}
+/*倒计时*/
+.countDown{
+    display: block;
+    width: 95px;
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+    font-size: 30px;
+    color: #9A2020;
+    background: url('../images/naozhong.png') no-repeat center;
+}
+/*.animeite{*/
+     /*position: relative;*/
+     /*width: 1000px;*/
+     /*height:700px;*/
+     /*margin:0 auto;*/
+ /*}*/
+/*出牌动画*/
+.bomb{
+    position: absolute;
+    margin:0  auto;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.rocket{
+    position: absolute;
+    margin:0  auto;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.plane{
+    position: absolute;
+    margin:0  auto;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.even{
+    position: absolute;
+    margin:0  auto;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.straight{
+    position: absolute;
+    margin:0  auto;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.play_beginbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background: #874400;*/
+    z-index: 999;
+    top: 0;
+}
+.play_beginbg>button{
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 44%;
+    width: 200px;
+    height: 50px;
+    background:sienna;
+    border: none;
+    border-radius:10px;
+    font-size: 30px;
+    color:#ff9100;
+    text-shadow: 0 0 10px #feec85;
+}
+.play_beginbg>.play_bg1,.play_beginbg>.play_bg2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.play_beginbg>.play_bg1{
+    left: 0;
+    background: url("../images/bg1-1_01.png") no-repeat top right;
+}
+.play_beginbg>.play_bg2{
+    right: 0;
+    background: url("../images/bg1-1_02.png") no-repeat 0 0;
+}
